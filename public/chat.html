@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #FF0000;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px
+        }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="chat.css">
+    <title>Escola de Idiomas</title>
+</head>
+<body>
+<div>
+    <h1>Bem vindo ao site de nossa escola de idiomas!</h1>
+    <h2>Cursos de línguas de qualidade.</h2>
+    <br>
+    <h3>Por favor, nos informe a sua dúvida!! Converse conosco.</h3>
+    <br>
+    <div></div>
+    <form action="/chatbot" method="get">
+        <label for="mensagem">Informe aqui sua mensagem:</label>
+        <input type="text" id="mensagem" name="mensagem">
+        <input type="submit" value="enviar" name="enviarMensagem">
+        <br>
+        <br>
+        <br>
+        <input type="text" id="resposta" name="resposta"  value="<%= resposta %>" maxlength="100" size="100" readonly>
+    </form>
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="index.html">Voltar</a></li>
+    </ul>
+</div>
+</body>

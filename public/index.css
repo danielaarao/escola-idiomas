@@ -1,0 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+body, div, table { color: #000000; font: 16px "Source Sans Pro", sans-serif; font-weight: 400; }
+
+.title { color: #000000; font: 21px "Varela Round", arial, sans-serif; font-weight: normal; }

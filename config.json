@@ -1,0 +1,21 @@
+
+
+[
+  {
+    "url": "https://gateway.watsonplatform.net/visual-recognition/api",
+    "version": "2018-03-19",
+    "iam_apikey": "kT_1D0FKPd21sTlboB5Okb6iL43_qQ6sDE-Tsywj-ajv"
+  },
+  {
+    "url": "https://gateway.watsonplatform.net/assistant/api",
+    "version": "2018-09-19",
+    "iam_apikey": "8cU_53JSR07spCo8ah_vxa4KgkF7cz1GNwZndNriynOg",
+    "assistant_id": "1b918bd1-6230-4185-b0f0-e04c4528ca6f",
+    "workspace_id": "e73d4e08-0795-49f1-a25f-e626b2686baa"
+  },
+  {
+    "url": "https://gateway.watsonplatform.net/language-translator/api",
+    "version": "2018-08-07",
+    "iam_apikey": "CRCVs6Mygam7rHfbHA826MtXWe8PY_z-saMY3LnOAPHY"
+  }
+]

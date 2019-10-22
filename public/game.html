@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #FF0000;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Escola de Idiomas</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Word Game</h1>
+    <h2>Informe o nome do animal abaixo em inglês para verificar se acertou o nome do mesmo.</h2>
+    <img src="<%= image %>" width='250px' height='250px'/>
+    <div class="form-group">
+        <form action="/pgame" method="GET">
+            <input type="hidden" name="imgId" value="<%= image %>">
+            <input type="hidden" name="reconhecido" value="<%= recognized %>">
+            <br>
+            <br>
+            <label for="resposta">Informe aqui a resposta do nome do animal en inglês:</label>
+            <input type="text" name="resposta" id="resposta">
+            <br><br>
+            <input type="submit" value="Enviar" name="submit">
+            <br>
+        </form></div>
+    <form action="agame" method="GET">
+        <input type="hidden" name="imgId2" value="<%= image %>">
+        <input type="hidden" name="reconhecido2" value="<%= recognized %>">
+        <input type="submit" value="Ajuda" name="ajuda">
+    </form>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">Resultado da resposta dada:</span>
+        <input id="msg1" type="text" class="form-control" name="msg" value="<%= resposta %>" readonly>
+    </div>
+    <br>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">Sua Ajuda/Dica</span>
+        <input id="msg2" type="text" class="form-control" name="msg" value="<%= ajuda %>" readonly>
+
+    </div>
+</div>
+<br>
+<!-- correct -->
+<ul class="pagination">
+    <li class="page-item"><a class="page-link" href="index.html">Voltar</a></li>
+</ul>
+<br>
+</body>
+</html>
